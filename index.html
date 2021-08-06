@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shubhankar's Protfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/custom.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Shubhankar's <span>Portfolio</span></div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#about" >About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+            <div class = "text">
+                <p>Hello, I am </p>
+                <h1 id="ani1"></h1>
+                <p><span id="ani" style="color: #e74c3c;"> Full-Stack developer</span></p>
+                <button class="c-btn" onclick="redirect()">Hire me</button>
+            </div>
+            
+        </header>
+        <section id="sidenav">
+            <img src = './images/navbaricon.png' id = "munebar" />
+            <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+        </section>
+        <section id="about">
+            <div class="section_info">
+                <h1>About</h1>
+                <p>Who I am?</p>
+            </div>
+            <div class="about-row">
+                <div class="about-left-col"> 
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-right-col"> 
+                    <p id="p-title">
+                       Hello, I am Shubhankar. 
+                    </p>
+                    <p >
+                        I am Electronics and Telecommunication graduate and currently pursuing Diploma in Advanced Computing (CDAC) at Sunbeam Institute of Information Technology. My career goal is to make living easier for everyone. My motivation to work for software development comes from potential of new technologies to improve everyone’s life.   
+                    </p>
+                    <form method="GET" action="./document/Resume.pdf">
+                        <button class="c-btn" >Download CV</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="section_info">
+                <h1 style="color: white;">Skills</h1>
+                <p>My skills</p>
+            </div>
+            <div class="skills-row">
+               <ul id = "myskills">
+                   <li>Data Base:  MySql</li>
+                   <li>Backend:  Node.js, Express.jse, Spring MVC, REST API, Hibernate, Servlet</li>
+                   <li>Frontend:  React.js, Java Script, AJAX, CSS, HTML</li>
+                   <li>Data Science:  Python, Numpy, Pandas</li>
+               </ul>
+            </div>
+        </section>
+        <section id="services" >
+            <div class="section_info">
+                <h1>Projects</h1>
+                <p>My Recent Projects</p>
+            </div>
+            <div class="serices-row">
+                <div class="services-box" >
+                    <img src="./images/gaana.jfif" >
+                    <h2>Clone of gaana.com</h2>
+                    <p>Technolgies: Node.js, Express.js, React.js</p>
+                    <a href="https://gitlab.com/D3_49673_Shubhankar/bookshop_springmvc">Git Repository</a>
+                </div>
+                <div class="services-box" >
+                    <img src="./images/protfolio.jfif" >
+                    <h2>Web design</h2>
+                    <p>Technologies: Java Script, Jquery, CSS, HTML</p>
+                    <a href="https://gitlab.com/D3_49673_Shubhankar/portfolio_webiste">Git Repository</a>
+                </div>
+                <div class="services-box">
+                    <img src="./images/servlets.png" >
+                    <h2>Online Bookhop using Servlet</h2>
+                    <p>Technologies: Core Java, JDBC, MySql, Servlet</p>
+                    <a href="https://gitlab.com/D3_49673_Shubhankar/bookshop_servlet">Git Repository</a>
+                </div>
+                <div class="services-box">
+                    <img src="./images/spring.png" >
+                    <h2>Online Bookhop using Spring MVC</h2>
+                    <p>Technologies: Spring MVC, Core Java, Hibernate, MySql, JSP</p>
+                    <a href="https://gitlab.com/D3_49673_Shubhankar/bookshop_servlet">Git Repository</a>
+                </div>
+                <div class="services-box">
+                    <img src="./images/underdevelopment.png" style="height: 120px;" >
+                    <h2 style="font-size: 20px;"> Steel factory management system</h2>
+                    <p>Technologies: React.js, Spring MVC, Node.js, Express.js, MySql </p>
+                    <span style="font-weight: bold;" id="under"></span>
+                </div>
+            </div>
+        </section>
+        <section id = "contact">
+            <div class="section_info" style="color: white;">
+                <h1>Get in touch</h1>
+                <p style="color: black;"></p>
+            </div>
+            <div class="contact-row">
+                <div class="contact-left-col">
+                    <div id="map" ></div>  
+                    
+                </div>
+                <div class="contact-right-col">
+                    <div id = "social">
+                        <a href="https://www.linkedin.com/in/shubhankar-patil-467832100/">
+                        <img src="./images/linkedin.png" ></a>
+                        <a href="https://www.hackerrank.com/shubhankarpatil1?hr_r=1">
+                        <img src="./images/hacker.png" ></a>
+                        <a href="https://twitter.com/shubhankarpatil">
+                        <img src="./images/twitter.png" ></a>
+                        <a href="https://gitlab.com/D3_49673_Shubhankar">
+                        <img src="./images/git.png" ></a>
+                    </div>
+                    <div id= "details">
+                        <address>
+                            Email: <a href="shubhankarpatil1301@live.com"> shubhankarpatil1301@live.com</a>.<br>
+                            Phone: +917588961464 <br>
+                            Sanjog, Tapdiya Nagar, <br>
+                            Akola, Maharashtra, <br>
+                            India, 444001
+                                                        
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <h2>Developed by <br/> Shubhankar Patil</h2>
+        </section>
+        <script src="./js/jquery.ripples-min.js"></script>
+        
+        <script src="./js/typed.min.js"></script>
+        
+        <script>
+            let animate = new Typed('#ani1', {
+                strings:["Shubhankar Patil,", "React Full Stack developer"],
+                typeSpeed:100,
+                backspeed:100,
+                loop:true
+            })
+        </script>
+         <script>
+            let animate1 = new Typed('#under', {
+                strings:["Under development"],
+                typeSpeed:100,
+                backspeed:100,
+                loop:true
+            })
+        </script>
+        <script src="./js/tilt.jquery.min.js"></script>
+        <script>
+            function initMap() {
+              var test= {lat: 18.51 , lng: 73.80};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: test
+              });
+              var marker = new google.maps.Marker({
+                position: test,
+                map: map
+              });
+            }
+          </script>
+          <script>
+              function  redirect(){
+                  window.location.href = "#contact"
+              }
+          </script>
+          
+          <script async defer
+          src=
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyBIR0qRdsEO76LwwXZjyumaTSSKL9HBxEc&callback=initMap">
+          </script>
+    </body>
+</div>
+</htl>
